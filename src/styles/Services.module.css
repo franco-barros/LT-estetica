@@ -31,3 +31,17 @@
 .services li:hover {
   transform: scale(1.05);
 }
+
+/* Estilos para el placeholder de medios */
+.mediaPlaceholder {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.9rem;
+}

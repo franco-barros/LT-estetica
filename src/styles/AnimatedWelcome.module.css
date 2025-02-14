@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px; /* Ajusta este valor según sea necesario */
+  margin-top: 40px; /* Reducido para acercar más al navbar */
+  text-align: center;
+}
+
+.message {
+  position: absolute; /* Se solapan en la misma posición */
+  left: 0;
+  right: 0;
+  font-size: 3rem; /* Ajusta el tamaño según prefieras */
+  font-weight: bold;
+  color: #00aaff;
+}

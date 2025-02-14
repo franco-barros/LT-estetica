@@ -1,12 +1,14 @@
 :global(:root) {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #00aaff; /* Color primario para acentos */
 }
 
 @media (prefers-color-scheme: dark) {
   :global(:root) {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #00aaff;
   }
 }
 
@@ -19,7 +21,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif; /* Fuente moderna Inter */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
