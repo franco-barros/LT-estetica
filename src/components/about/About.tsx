@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
+import ImageCarousel from "../imagecarrousel/ImageCarousel"; // Asegúrate de que la ruta es correcta
 import styles from "../../styles/About.module.css";
 
-// Usamos motion.section directamente
 const MotionSection = motion.section;
 
 const About = () => {
@@ -20,20 +20,22 @@ const About = () => {
         componente mediante selladores de alta calidad.
       </p>
       <p>
-        Con <strong>SACABOLLOS</strong> realizamos reparaciones artesanales,
+        Con <strong>Sacabollos</strong> realizamos reparaciones artesanales,
         evitando métodos invasivos como masillas o soldaduras, y dejando tu auto
         en condiciones óptimas.
       </p>
       <p>
-        Nuestro taller, liderado por <strong>LAUTARO TELLO</strong>, un joven
+        Nuestro taller, liderado por <strong>Lautaro Tello</strong>, un joven
         apasionado que inició en 2019 y ya ha tratado más de 150 vehículos,
-        combina formación continua y experiencia para brindar el mejor servicio.
+        combina formación continua y experiencia para brindar el mejor servicio
+        en toda la zona del gran San juan y sus alrededores.
       </p>
       <p>
         Además, en esta temporada de <strong>granizo</strong> implementamos
         soluciones especializadas para restaurar y proteger tu auto de los
         daños, asegurando un cuidado integral.
       </p>
+      <ImageCarousel />
     </MotionSection>
   );
 };

@@ -4,7 +4,6 @@ import "../styles/global.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
-// Carga la fuente Inter con variables personalizadas
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],

@@ -10,7 +10,6 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      {/* Contenedor del logo a la izquierda */}
       <div className={styles.logoContainer}>
         <img src="/Lt.logo.png" alt="Logo LT" className={styles.logo} />
       </div>

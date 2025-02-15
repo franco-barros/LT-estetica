@@ -4,7 +4,7 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #25d366; /* Verde de WhatsApp */
+  background-color: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .whatsappButton:hover {
-  background-color: #007bff; /* Azul */
+  background-color: #007bff;
 }
 
 .icon {

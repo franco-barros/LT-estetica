@@ -12,21 +12,18 @@
   z-index: 100;
 }
 
-/* Contenedor del logo alineado a la izquierda */
 .logoContainer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-/* Logo usando <img> para mejor calidad */
 .logo {
-  height: 50px; /* Ajusta según necesites */
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
 
-/* Menú de escritorio */
 .desktopMenu {
   list-style: none;
   display: flex;

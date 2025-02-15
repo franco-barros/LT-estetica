@@ -7,7 +7,6 @@ const messages = [
   "¡Gracias por elegirnos!",
 ];
 
-// Definimos el tipo usando DetailedHTMLProps y HTMLAttributes para un div
 type AnimatedDivProps = AnimatedProps<
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 >;
