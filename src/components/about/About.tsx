@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import ImageCarousel from "../imagecarrousel/ImageCarousel"; // Asegúrate de que la ruta es correcta
+import ImageCarousel from "../imagecarrousel/ImageCarousel"; // Ajusta la ruta según tu estructura
 import styles from "../../styles/About.module.css";
 
 const MotionSection = motion.section;
@@ -8,6 +8,7 @@ const MotionSection = motion.section;
 const About = () => {
   return (
     <MotionSection
+      id="about"
       className={styles.about}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -27,8 +28,7 @@ const About = () => {
       <p>
         Nuestro taller, liderado por <strong>Lautaro Tello</strong>, un joven
         apasionado que inició en 2019 y ya ha tratado más de 150 vehículos,
-        combina formación continua y experiencia para brindar el mejor servicio
-        en toda la zona del gran San juan y sus alrededores.
+        combina formación continua y experiencia para brindar el mejor servicio.
       </p>
       <p>
         Además, en esta temporada de <strong>granizo</strong> implementamos

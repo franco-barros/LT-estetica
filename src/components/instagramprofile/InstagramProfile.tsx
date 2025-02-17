@@ -15,7 +15,7 @@ const InstagramProfile: React.FC<InstagramProfileProps> = ({
   images,
 }) => {
   return (
-    <div className={styles.instagramProfile}>
+    <div id="instagramprofile" className={styles.instagramProfile}>
       <div className={styles.header}>
         <a href={profileUrl} target="_blank" rel="noopener noreferrer">
           <FaInstagram className={styles.icon} />

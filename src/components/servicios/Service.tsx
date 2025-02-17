@@ -16,7 +16,6 @@ type DivProps = DetailedHTMLProps<
 >;
 type AnimatedDivProps = AnimatedProps<DivProps>;
 
-// Componente animado
 const AnimatedDiv: React.FC<AnimatedDivProps> =
   animated.div as unknown as React.FC<AnimatedDivProps>;
 
@@ -91,7 +90,7 @@ export const Services = () => {
   });
 
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <h2>Nuestros Servicios</h2>
       <ul>
         {serviceList.map((service, index) => (
@@ -100,12 +99,13 @@ export const Services = () => {
             {service.description && (
               <p>{service.description.substring(0, 60)}...</p>
             )}
+            {/* Reemplazamos el placeholder por el carrusel de preview */}
             <ServicePreviewCarousel images={service.images} />
           </li>
         ))}
       </ul>
 
-      {/* Modal para mostrar detalles del servicio */}
+      {/* Modal para mostrar detalles e imágenes del servicio */}
       {modalTransition((style, item) =>
         item ? (
           <AnimatedDiv

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Settings, X } from "lucide-react";
@@ -7,6 +6,7 @@ import styles from "../../styles/Navbar.module.css";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const handleLinkClick = () => setIsOpen(false);
 
   return (
     <nav className={styles.navbar}>
@@ -17,16 +17,24 @@ export const Navbar = () => {
       {/* Menú de escritorio */}
       <ul className={styles.desktopMenu}>
         <li>
-          <a href="#hero">Inicio</a>
+          <a href="#hero" onClick={handleLinkClick}>
+            Inicio
+          </a>
         </li>
         <li>
-          <a href="#about">Nosotros</a>
+          <a href="#about" onClick={handleLinkClick}>
+            Nosotros
+          </a>
         </li>
         <li>
-          <a href="#services">Servicios</a>
+          <a href="#services" onClick={handleLinkClick}>
+            Servicios
+          </a>
         </li>
         <li>
-          <a href="#contact">Contacto</a>
+          <a href="#instagramprofile" onClick={handleLinkClick}>
+            Contacto
+          </a>
         </li>
       </ul>
 
@@ -55,16 +63,24 @@ export const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <li>
-              <a href="#hero">Inicio</a>
+              <a href="#hero" onClick={handleLinkClick}>
+                Inicio
+              </a>
             </li>
             <li>
-              <a href="#about">Nosotros</a>
+              <a href="#about" onClick={handleLinkClick}>
+                Nosotros
+              </a>
             </li>
             <li>
-              <a href="#services">Servicios</a>
+              <a href="#services" onClick={handleLinkClick}>
+                Servicios
+              </a>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
+              <a href="#instagramprofile" onClick={handleLinkClick}>
+                Contacto
+              </a>
             </li>
           </motion.ul>
         )}

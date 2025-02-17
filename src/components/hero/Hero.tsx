@@ -5,7 +5,7 @@ import styles from "../../styles/Hero.module.css";
 
 export const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       {/* Video de fondo */}
       <video className={styles.backgroundVideo} autoPlay loop muted playsInline>
         <source src="/videos/Pulido.mp4" type="video/mp4" />
