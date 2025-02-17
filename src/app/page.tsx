@@ -4,6 +4,7 @@ import About from "../components/about/About";
 import { Services } from "../components/servicios/Service";
 import WhatsappButton from "../components/whatsappbutton/WhatsappButton";
 import InstagramFeed from "../components/instagramprofile/InstagramProfile";
+import InstagramReel from "../components/instagramreel/InstagramReel"; // Asegúrate de que la ruta es correcta
 
 export default function Home() {
   const instagramImages = [
@@ -36,6 +37,10 @@ export default function Home() {
           username="lt.esteticavehicular"
           profileUrl="https://www.instagram.com/lt.esteticavehicular"
           images={instagramImages}
+        />
+        <InstagramReel
+          url="https://www.instagram.com/reel/DFiwIGAPuat/?igsh=aDA3cG5jZ25haTE0"
+          width="500px"
         />
       </div>
     </>
